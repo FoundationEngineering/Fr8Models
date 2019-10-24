@@ -1,0 +1,27 @@
+{
+  "name": "fr8models",
+  "version": "1.0.0",
+  "description": "Model of the fr8 system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoundationEngineering/Fr8models.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FoundationEngineering/Fr8models/issues"
+  },
+  "homepage": "https://github.com/FoundationEngineering/Fr8models#readme",
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "typings": "^2.1.1"
+  }
+}

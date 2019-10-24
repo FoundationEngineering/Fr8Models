@@ -1,5 +1,3 @@
 export class UserInfoFromToken {
-    public userId: number;
-    public companyId: number;
-    public username: string;
+   constructor(public userId: number, public companyId: number, public username: string) {}
 }

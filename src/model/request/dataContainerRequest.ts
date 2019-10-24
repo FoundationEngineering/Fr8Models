@@ -1,3 +1,3 @@
 export class DataContainerRequest {
-    public data: string;
+    constructor(public data: string){ }
 }

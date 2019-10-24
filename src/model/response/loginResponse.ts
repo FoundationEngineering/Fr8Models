@@ -1,4 +1,3 @@
 export class LoginResponse {
-    public username: string;
-    public token: string;
+    constructor(public username: string, public token: string){ }
 }
