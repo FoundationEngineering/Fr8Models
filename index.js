@@ -1,32 +1,19 @@
 // Domain
-import { User } from "src/model/domain/User"
+module.exports.User = require("dist/domain/User");
 
 // Exception
-import { NotFoundException } from "src/model/exception/notFoundException"
+module.exports.NotFoundException = require("dist/exception/notFoundException");
 
 // Request
-import { DataContainerRequest } from "src/model/exception/notFoundException"
-import { LoginRequest } from "src/model/exception/notFoundException"
-import { RegisterRequest } from "src/model/exception/notFoundException"
+module.exports.NotFoundException = require("dist/request/dataContainerRequest");
+module.exports.LoginRequest = require("dist/request/loginRequest");
+module.exports.RegisterRequest = require("dist/request/registerRequest");
 
 // Response
-import { LoginResponse } from "src/model/exception/notFoundException"
-import { TokenVerificationResponse } from "src/model/exception/notFoundException"
+module.exports.LoginResponse = require("dist/exception/loginResponse");
+module.exports.TokenVerificationResponse = require("dist/exception/tokenVerificationResponse");
 
 // Utils
-import { ErrorResponse } from "src/model/exception/notFoundException"
-import { UserInfoFromToken } from "src/model/exception/notFoundException"
+module.exports.ErrorResponse = require("dist/exception/errorResponse");
+module.exports.UserInfoFromToken = require("dist/exception/userInfoFromToken");
 
-module.exports.User = User;
-
-module.exports.NotFoundException = NotFoundException;
-
-module.exports.DataContainerRequest = DataContainerRequest;
-module.exports.LoginRequest = LoginRequest;
-module.exports.RegisterRequest = RegisterRequest;
-
-module.exports.LoginResponse = LoginResponse;
-module.exports.TokenVerificationResponse = TokenVerificationResponse
-
-module.exports.ErrorResponse = ErrorResponse;
-module.exports.UserInfoFromToken = UserInfoFromToken;
