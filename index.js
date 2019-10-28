@@ -1,19 +1,19 @@
 // Domain
-module.exports.User = require("dist/domain/User");
+module.exports.User = require("./dist/domain/User");
 
 // Exception
-module.exports.NotFoundException = require("dist/exception/notFoundException");
+module.exports.NotFoundException = require("./dist/exception/notFoundException");
 
 // Request
-module.exports.NotFoundException = require("dist/request/dataContainerRequest");
-module.exports.LoginRequest = require("dist/request/loginRequest");
-module.exports.RegisterRequest = require("dist/request/registerRequest");
+module.exports.NotFoundException = require("./dist/request/dataContainerRequest");
+module.exports.LoginRequest = require("./dist/request/loginRequest");
+module.exports.RegisterRequest = require("./dist/request/registerRequest");
 
 // Response
-module.exports.LoginResponse = require("dist/exception/loginResponse");
-module.exports.TokenVerificationResponse = require("dist/exception/tokenVerificationResponse");
+module.exports.LoginResponse = require("./dist/response/loginResponse");
+module.exports.TokenVerificationResponse = require("./dist/response/tokenVerificationResponse");
 
 // Utils
-module.exports.ErrorResponse = require("dist/exception/errorResponse");
-module.exports.UserInfoFromToken = require("dist/exception/userInfoFromToken");
+module.exports.ErrorResponse = require("./dist/utils/errorResponse");
+module.exports.UserInfoFromToken = require("./dist/utils/userInfoFromToken");
 
