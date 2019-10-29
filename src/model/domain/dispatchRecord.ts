@@ -1,5 +1,5 @@
-// Use data mapper layer translate the backend
 export class DispatchRecord {
+// Use data mapper layer translate the backend
     public id: string;
     public flags: string;
     public jobType: string;

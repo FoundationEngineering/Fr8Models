@@ -1,6 +1,6 @@
-export class PriceRule {
+export namespace PriceRuleConst {
     // Type of Pricing Rules
-    public static TYPE: any = {
+    export const TYPE: any = {
         RATING_CARD: 'type_rating_card',
         TONNE_RATE: 'type_tonne_rate',
         MASS_RATE: 'type_mass_rate',
@@ -14,5 +14,4 @@ export class PriceRule {
         FLAT_CHARGE: 'type_flat_charge',
         GST: 'type_gst',
     };
-    constructor(public id: string, public type: string){ }
 }

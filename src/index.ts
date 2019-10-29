@@ -6,6 +6,7 @@ export * from "./model/domain/dispatchRecord";
 export * from "./model/domain/quote/pricingLevel";
 export * from "./model/domain/quote/pricingRateLevel";
 export * from "./model/domain/quote/priceRule";
+export * from "./model/domain/quote/priceRuleTypes";
 export * from "./model/domain/quote/ratingCard";
 
 // Exception
