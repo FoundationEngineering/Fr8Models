@@ -1,11 +1,11 @@
 {
   "name": "fr8models",
-  "version": "1.0.22",
+  "version": "1.0.25",
   "description": "Model of the fr8 system",
-  "main": "index.js",
+  "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/FoundationEngineering/Fr8models#readme",
   "devDependencies": {
-    "typescript": "^3.6.4"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {
     "typings": "^2.1.1"

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // Use data mapper layer translate the backend
-var DispatchRecord = /** @class */ (function () {
-    function DispatchRecord(args) {
+class default_1 {
+    constructor(args) {
         this.id = '';
         this.flags = '';
         this.jobType = '';
@@ -46,6 +46,5 @@ var DispatchRecord = /** @class */ (function () {
         // Load in kwargs here
         Object.assign(this, args);
     }
-    return DispatchRecord;
-}());
-exports.default = DispatchRecord;
+}
+exports.default = default_1;

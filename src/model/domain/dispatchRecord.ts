@@ -1,5 +1,5 @@
 // Use data mapper layer translate the backend
-export default class DispatchRecord {
+export class DispatchRecord {
     public id: string;
     public flags: string;
     public jobType: string;
@@ -52,7 +52,6 @@ export default class DispatchRecord {
     public nextDepot: string; // TODO: load from db
     public deliveryDepot: string; // TODO: load from db
     public currentDepot: string; // TODO: load from db
-
     constructor(args: any) {
         this.id = '';
         this.flags = '';

@@ -1,4 +1,4 @@
-export default class {
+export declare class DispatchRecord {
     id: string;
     flags: string;
     jobType: string;
