@@ -1,6 +1,6 @@
 {
   "name": "fr8models",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "description": "Model of the fr8 system",
   "main": "index.js",
   "scripts": {

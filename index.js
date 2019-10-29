@@ -1,5 +1,12 @@
 // Domain
-module.exports.User = require("./dist/domain/User");
+module.exports.User = require("./dist/domain/user");
+module.exports.DispatchDefinition = require("./dist/domain/dispatchDefinition");
+module.exports.DispatchRecord = require("./dist/domain/dispatchRecord");
+//// Quote
+module.exports.PricingLevel = require("./dist/domain/quote/pricingLevel");
+module.exports.PricingRateLevel = require("./dist/domain/quote/pricingRateLevel");
+module.exports.PriceRule = require("./dist/domain/quote/priceRule");
+module.exports.RatingCard = require("./dist/domain/quote/ratingCard");
 
 // Exception
 module.exports.NotFoundException = require("./dist/exception/notFoundException");
