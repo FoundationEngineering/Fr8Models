@@ -1,12 +1,12 @@
 {
   "name": "fr8models",
-  "version": "1.0.38",
+  "version": "1.0.41",
   "description": "Model of the fr8 system",
-  "main": "bundle.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "clean": "rm dist"
+    "build": "tsc",
+    "clean": "rm -R dist"
   },
   "repository": {
     "type": "git",
