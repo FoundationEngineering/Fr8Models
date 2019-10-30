@@ -4,6 +4,10 @@ export * from "./model/domain/dispatchDefinition";
 export * from "./model/domain/dispatchRecord";
 //// Quote
 export * from "./model/domain/quote/pricingLevel";
+export * from "./model/domain/quote/priceConfig";
+export * from "./model/domain/quote/quoteInterfaceRequest";
+export * from "./model/domain/quote/quoteInterfaceResponse";
+
 export * from "./model/domain/quote/pricingRateLevel";
 export * from "./model/domain/quote/priceRule";
 export * from "./model/domain/quote/priceRuleTypes";
