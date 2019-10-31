@@ -10,7 +10,7 @@ export * from "./model/domain/quote/quoteInterfaceResponse";
 
 export * from "./model/domain/quote/pricingRateLevel";
 export * from "./model/domain/quote/priceRule";
-export * from "./model/domain/quote/priceRuleTypes";
+export * from "./model/domain/quote/priceRuleSet";
 export * from "./model/domain/quote/ratingCard";
 
 // Exception
