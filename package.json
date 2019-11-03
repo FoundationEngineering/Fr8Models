@@ -1,10 +1,11 @@
 {
   "name": "fr8models",
-  "version": "1.0.45",
+  "version": "1.0.49",
   "description": "Model of the fr8 system",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-back": "tsc -m CommonJS",
     "build": "tsc",
     "clean": "rm -R dist",
     "release": "npm version patch && npm run clean && npm run build && npm publish"
