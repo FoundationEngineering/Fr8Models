@@ -1,6 +1,9 @@
 import { PricingRateLevel } from './pricingRateLevel';
-import { PricingLevel } from './pricingLevel';
+import { MajorLocationSet, MinorLocationSet } from './pricingLevel';
 
 export class RatingCard {
-    constructor(public majorLocations: Array<PricingLevel>, public costRatePerTonne: Array<PricingRateLevel>){ }
+    constructor(public majorLocations: MajorLocationSet,
+                public minorLocations: MinorLocationSet,
+                public pricingRateLevelList: Array<PricingRateLevel>){ }
+
 }

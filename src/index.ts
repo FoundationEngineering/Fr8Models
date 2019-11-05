@@ -29,3 +29,5 @@ export * from "./model/response/tokenVerificationResponse";
 export * from "./model/utils/errorResponse";
 export * from "./model/utils/userInfoFromToken";
 
+// Helper
+export * from "./helper/modelUtils";
