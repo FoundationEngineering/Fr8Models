@@ -12,6 +12,7 @@ export * from "./model/domain/quote/pricingRateLevel";
 export * from "./model/domain/quote/priceRule";
 export * from "./model/domain/quote/priceRuleSet";
 export * from "./model/domain/quote/ratingCard";
+export * from "./model/domain/quote/quote";
 
 // Exception
 export * from "./model/exception/notFoundException";
