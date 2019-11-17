@@ -20,10 +20,12 @@ export * from "./model/exception/notFoundException";
 // Request
 export * from "./model/request/dataContainerRequest";
 export * from "./model/request/loginRequest";
+export * from "./model/request/logoutRequest";
 export * from "./model/request/registerRequest";
 
 // Response
 export * from "./model/response/loginResponse";
+export * from "./model/response/logoutResponse";
 export * from "./model/response/tokenVerificationResponse";
 
 // Utils
