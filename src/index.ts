@@ -31,6 +31,7 @@ export * from "./model/response/tokenVerificationResponse";
 // Utils
 export * from "./model/utils/errorResponse";
 export * from "./model/utils/userInfoFromToken";
+export * from "./model/utils/messageField";
 
 // Helper
 export * from "./helper/modelUtils";
