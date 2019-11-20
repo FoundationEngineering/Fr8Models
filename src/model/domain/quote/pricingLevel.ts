@@ -3,25 +3,29 @@
 */
 
 export class PricingLevel {
-    constructor(public m3: number, public tonne: number, public cost: number){ }
+    constructor(public m3?: number, public tonne?: number, public cost?: number){ }
 }
 
 export class PricingLevelPair {
-    constructor(public locationKey: string, public pricingLevelList: Array<PricingLevel>){ }
+    constructor(public locationKey?: string, public pricingLevelList?: Array<PricingLevel>){ }
 }
 
 export class MinorLocationSet {
-    constructor(public pricingLevelPair: Array<PricingLevelPair>){ }
+    constructor(public pricingLevelPair?: Array<PricingLevelPair>){
+        this.pricingLevelPair = this.pricingLevelPair ? this.pricingLevelPair : []; 
+    }
 
     public getByLocation(key: string): PricingLevelPair {
-        return this.pricingLevelPair[(key as any)];
+        return this.pricingLevelPair ? this.pricingLevelPair[(key as any)] : {};
     }
+
 }
 
 export class MajorLocationSet {
-    constructor(public pricingLevelPair: Array<PricingLevelPair>){ }
+    constructor(public pricingLevelPair?: Array<PricingLevelPair>){ }
 
     public getByLocation(key: string): PricingLevelPair {
-        return this.pricingLevelPair[(key as any)];
+        return this.pricingLevelPair ? this.pricingLevelPair[(key as any)] : {};
     }
+
 }
