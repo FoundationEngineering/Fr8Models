@@ -2,9 +2,9 @@ import { BaseRequest } from "./BaseRequest";
 import { MessageField } from "../utils/messageField";
 
 export class LoginRequest extends BaseRequest{
-    public username: string;
-    public password: string;
-    public detail: Array<MessageField>;
+    constructor(public username?: string, public password?: string, public detail?: Array<MessageField>){
+        super();
+    };
 
     public validate(): boolean {
         this.detail = new Array();
