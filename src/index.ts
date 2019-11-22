@@ -1,5 +1,6 @@
 // Domain
 export * from "./model/domain/user";
+export * from "./model/domain/company";
 export * from "./model/domain/dispatchDefinition";
 export * from "./model/domain/dispatchRecord";
 //// Quote
@@ -25,6 +26,7 @@ export * from "./model/request/registerRequest";
 // Response
 export * from "./model/response/loginResponse";
 export * from "./model/response/tokenVerificationResponse";
+export * from "./model/response/registerResponse";
 
 // Utils
 export * from "./model/utils/errorResponse";

@@ -1,3 +1,4 @@
 export class UserInfoFromToken {
-   constructor(public userId?: number, public companyId?: number, public username?: string, public access?: any[]) {}
+    // Treat as a session class
+   constructor(public userId?: number, public companyId?: number, public companyName?: string, public username?: string, public access?: any[]) {}
 }
