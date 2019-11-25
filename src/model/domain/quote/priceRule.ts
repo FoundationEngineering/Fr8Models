@@ -14,5 +14,5 @@ export class PriceRule {
         FLAT_CHARGE: 'type_flat_charge',
         GST: 'type_gst',
     };
-    constructor(public id: string, public stepNo: number, public type: string){ }
+    constructor(public stepNo: number, public type: string){ }
 }
