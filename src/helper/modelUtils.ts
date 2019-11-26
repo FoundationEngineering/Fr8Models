@@ -19,4 +19,23 @@ export class ModelUtils {
         });
         return list;
     }
+    
+    public static keysToLowerCase(obj: any): any {
+        var key, keys = Object.keys(obj);
+        var n = keys.length;
+        var newobj={}
+        while (n--) {
+            key = keys[n];
+            (newobj as any)[key.toLowerCase()] = obj[key];
+        }
+        return newobj;
+    }
+
+    public static valuesToLowerCase(obj: any): any {
+        obj.forEach((item: string) => {
+            const idx = obj.indexOf(item);
+            obj[idx] = item.toLowerCase();
+        });
+        return obj;
+    }
 }

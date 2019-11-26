@@ -19,8 +19,8 @@ export class PriceRule {
     public static NON_SEQ_STEP_NO = -1;
 
     public compareSteps = {
-        stepA: 0, // from begining to step A
-        stepB: 0 // from step A to step B
+        stepA: 0,
+        stepB: 0
     };
 
     
