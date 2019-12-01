@@ -19,8 +19,11 @@ export * from "./model/domain/quote/quote";
 
 // Exception
 export * from "./model/exception/notFoundException";
+export * from "./model/exception/forbiddenException";
+export * from "./model/exception/badRequestException";
 
 // Request
+export * from "./model/request/createRatingCardRequest";
 export * from "./model/request/createPriceRuleConfigRequest";
 export * from "./model/request/dataContainerRequest";
 export * from "./model/request/loginRequest";
