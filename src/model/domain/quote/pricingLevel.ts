@@ -11,21 +11,9 @@ export class PricingLevelPair {
 }
 
 export class MinorLocationSet {
-    constructor(public pricingLevelPair?: Array<PricingLevelPair>){
-        this.pricingLevelPair = this.pricingLevelPair ? this.pricingLevelPair : []; 
-    }
-
-    public getByLocation(key: string): PricingLevelPair {
-        return this.pricingLevelPair ? this.pricingLevelPair[(key as any)] : {};
-    }
-
+    constructor(public pricingLevelPair?: Array<PricingLevelPair>){ }
 }
 
 export class MajorLocationSet {
     constructor(public pricingLevelPair?: Array<PricingLevelPair>){ }
-
-    public getByLocation(key: string): PricingLevelPair {
-        return this.pricingLevelPair ? this.pricingLevelPair[(key as any)] : {};
-    }
-
 }
