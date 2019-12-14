@@ -38,4 +38,14 @@ export class ModelUtils {
         });
         return obj;
     }
+
+    public static uuidv4(): string {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        for (var i = 0; i < 20; i++)
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    }
 }
