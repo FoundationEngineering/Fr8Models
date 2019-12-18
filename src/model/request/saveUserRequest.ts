@@ -1,3 +1,3 @@
 export class SaveUserRequest {
-    constructor(public username?: string, password?: string, companyId?: number){ }
+    constructor(public username?: string, public password?: string, public companyId?: number){ }
 }

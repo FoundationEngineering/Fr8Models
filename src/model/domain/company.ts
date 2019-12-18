@@ -29,6 +29,5 @@ export class CompanyExtended extends companyTemplate {
         public users?: User[]) { // Extended fields
         super(id, parentId, childrenIds, companyName, companyMainEmail, companyNotifyEmail,
             companyQuoteEmail, createdAt, updatedAt);
-        
     }
 }
