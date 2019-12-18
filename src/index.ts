@@ -28,11 +28,19 @@ export * from "./model/request/createPriceRuleConfigRequest";
 export * from "./model/request/dataContainerRequest";
 export * from "./model/request/loginRequest";
 export * from "./model/request/registerRequest";
+export * from "./model/request/saveUserRequest";
+export * from "./model/request/saveCompanyRequest";
 
 // Response
 export * from "./model/response/loginResponse";
 export * from "./model/response/tokenVerificationResponse";
 export * from "./model/response/registerResponse";
+export * from "./model/response/getCompanyResponse";
+export * from "./model/response/getCompaniesResponse";
+export * from "./model/response/getCompanyUserResponse";
+export * from "./model/response/getCompanyUsersResponse";
+export * from "./model/response/saveCompanyResponse";
+export * from "./model/response/saveUserResponse";
 
 // Utils
 export * from "./model/utils/errorResponse";
