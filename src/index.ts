@@ -31,6 +31,7 @@ export * from "./model/request/registerRequest";
 export * from "./model/request/saveUserRequest";
 export * from "./model/request/updateUserRequest";
 export * from "./model/request/saveCompanyRequest";
+export * from "./model/request/updateCompanyRequest";
 export * from "./model/request/resetPasswordRequest";
 
 // Response
@@ -43,6 +44,7 @@ export * from "./model/response/getCompanyUserResponse";
 export * from "./model/response/getCompanyUsersResponse";
 export * from "./model/response/saveUserResponse";
 export * from "./model/response/updateUserResponse";
+export * from "./model/response/updateCompanyResponse";
 export * from "./model/response/saveCompanyResponse";
 export * from "./model/response/resetPasswordResponse";
 
