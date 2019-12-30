@@ -24,6 +24,7 @@ export * from "./model/exception/badRequestException";
 
 // Request
 export * from "./model/request/createRatingCardRequest";
+export * from "./model/request/updateRatingCardRequest";
 export * from "./model/request/createPriceRuleConfigRequest";
 export * from "./model/request/dataContainerRequest";
 export * from "./model/request/loginRequest";
@@ -37,19 +38,24 @@ export * from "./model/request/resetPasswordRequest";
 // Response
 export * from "./model/response/loginResponse";
 export * from "./model/response/tokenVerificationResponse";
-export * from "./model/response/registerResponse";
+
 export * from "./model/response/getCompanyResponse";
 export * from "./model/response/getCompaniesResponse";
 export * from "./model/response/getCompanyUserResponse";
 export * from "./model/response/getCompanyUsersResponse";
-export * from "./model/response/saveUserResponse";
+export * from "./model/response/getRatingCardResponse";
+export * from "./model/response/getRatingCardsResponse";
+
+export * from "./model/response/resetPasswordResponse";
 export * from "./model/response/updateUserResponse";
 export * from "./model/response/updateCompanyResponse";
-export * from "./model/response/saveCompanyResponse";
-export * from "./model/response/resetPasswordResponse";
+export * from "./model/response/updateRatingCardResponse";
 
 export * from "./model/response/saveCompanyResponse";
 export * from "./model/response/saveUserResponse";
+export * from "./model/response/saveRatingCardResponse";
+export * from "./model/response/saveCompanyResponse";
+export * from "./model/response/registerResponse";
 
 // Utils
 export * from "./model/utils/errorResponse";
