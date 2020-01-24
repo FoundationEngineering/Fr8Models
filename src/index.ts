@@ -16,6 +16,7 @@ export * from "./model/domain/quote/priceRuleLocationConditional";
 export * from "./model/domain/quote/priceRuleConfig";
 export * from "./model/domain/quote/ratingCard";
 export * from "./model/domain/quote/quote";
+export * from "./model/domain/quote/additionalCosts";
 
 // Exception
 export * from "./model/exception/notFoundException";
