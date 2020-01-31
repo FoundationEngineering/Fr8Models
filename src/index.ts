@@ -53,6 +53,7 @@ export * from "./model/response/getRatingCardResponse";
 export * from "./model/response/getRatingCardsResponse";
 export * from "./model/response/getQuotesResponse";
 export * from "./model/response/getPriceRuleConfigs";
+export * from "./model/response/getAdditionalCostsResponse";
 
 export * from "./model/response/resetPasswordResponse";
 export * from "./model/response/updateUserResponse";
