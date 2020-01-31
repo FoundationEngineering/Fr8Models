@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-back": "tsc -m CommonJS",
-    "build": "tsc",
+    "build": "tsc -m CommonJS",
     "clean": "rm -R dist",
     "release": "npm version patch && npm run clean && npm run build && npm publish"
   },
