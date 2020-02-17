@@ -1,7 +1,13 @@
 // Used before selecting a price rule set
 import { PriceRuleSet } from './priceRuleSet';
-import { PriceRule } from './priceRule';
 
+export class LocationTuple {
+    constructor(public to: string, public from: string) {}
+}
 export class PriceRuleLocationConditional {
-    constructor(public locationList?: Array<string>, public priceRuleSet?: PriceRuleSet, public id?: string, public name?: string){ }
+    constructor(
+        public locationList?: Array<LocationTuple>,
+        public priceRuleSet?: PriceRuleSet,
+        public id?: string,
+        public name?: string) { }
 }
