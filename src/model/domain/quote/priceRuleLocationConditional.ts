@@ -9,5 +9,7 @@ export class PriceRuleLocationConditional {
         public locationList?: Array<LocationTuple>,
         public priceRuleSet?: PriceRuleSet,
         public id?: string,
-        public name?: string) { }
+        public name?: string,
+        public from?: string
+        ) { }
 }
