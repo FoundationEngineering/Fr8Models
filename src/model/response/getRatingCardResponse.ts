@@ -1,4 +1,4 @@
-import { RatingCard } from '../domain/quote/ratingCard';
+import { RatingCard } from '../domain/quote/ratingCard/ratingCard';
 export class GetRatingCardResponse {
     constructor(public ratingCard?: RatingCard){}
 }

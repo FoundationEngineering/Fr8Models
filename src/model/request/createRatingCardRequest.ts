@@ -1,4 +1,4 @@
-import { RatingCard } from '../domain/quote/ratingCard';
+import { RatingCard } from '../domain/quote/ratingCard/ratingCard';
 import { PricingLevelPair, MajorLocationSet, MinorLocationSet } from '../domain/quote/pricingLevel';
 import { PricingRateLevelPair } from '../domain/quote/pricingRateLevel';
 

@@ -14,7 +14,8 @@ export * from "./model/domain/quote/priceRule";
 export * from "./model/domain/quote/priceRuleSet";
 export * from "./model/domain/quote/priceRuleLocationConditional";
 export * from "./model/domain/quote/priceRuleConfig";
-export * from "./model/domain/quote/ratingCard";
+export * from "./model/domain/quote/ratingCard/ratingCard";
+export * from "./model/domain/quote/ratingCard/ratingCardTonneVolumeRates";
 export * from "./model/domain/quote/quote";
 export * from "./model/domain/quote/additionalCosts";
 

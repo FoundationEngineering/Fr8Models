@@ -1,4 +1,4 @@
-import { RatingCard } from './ratingCard';
+import { RatingCard } from './ratingCard/ratingCard';
 import { PricingRateLevel } from './pricingRateLevel';
 
 export class PriceConfig {
