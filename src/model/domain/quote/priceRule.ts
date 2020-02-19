@@ -1,3 +1,7 @@
+// Can either store a reference to the data src in db or store the flat cost
+export class PriceRuleDataSet {
+    constructor(public type: string, public cost?: number, public idReferences?: number[]) {}
+}
 export class PriceRule {
     // Type of Pricing Rules
     public static TYPE: any = {
@@ -23,11 +27,17 @@ export class PriceRule {
         stepB: 0
     };
 
-    
-    constructor(public stepNo?: number, public type?: string){ }
+    public static DATA_SET_SRC: any = {
+        RATING_CARD: 'src_rating_card', // Store reference to id of rating card
+        RATE_RATING_CARD: 'src_rate_rating_card', // Store reference to id of rating card 
+        FLAT_AMOUNT: 'src_flat_amount' // Store float Value
+        // Other sources defined later
+    }
+
+    constructor(public stepNo?: number, public type?: string, public dataSetSrc?: PriceRuleDataSet){ }
 
     public setAsGreaterNext(stepA: number, stepB: number){
-        this.stepNo = PriceRule.NON_SEQ_STEP_NO; // reserved for non sequenciable steps i.e. filter out
+        this.stepNo = PriceRule.NON_SEQ_STEP_NO; // reserved for non sequenceable steps i.e. filter out
         this.type = PriceRule.TYPE.GET_GREATER_NEXT;
         this.compareSteps.stepA = stepA;
         this.compareSteps.stepB = stepB;
