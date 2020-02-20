@@ -3,5 +3,10 @@ export class PricingRateLevel {
 }
 
 export class PricingRateLevelPair {
-    constructor(public locationKey?: string, public pricingRateLevel?: PricingRateLevel){ }
+    constructor(
+        public locationKey?: string,
+        public pricingRateLevel?: PricingRateLevel,
+        public tonneRateLevel?: number,
+        public volumeRateLevel?: number
+        ) { }
 }
