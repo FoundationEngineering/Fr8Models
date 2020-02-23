@@ -5,15 +5,15 @@ export * from "./model/domain/dispatchDefinition";
 export * from "./model/domain/dispatchRecord";
 //// Quote
 export * from "./model/domain/quote/pricingLevel";
-export * from "./model/domain/quote/priceConfig";
-export * from "./model/domain/quote/quoteInterfaceRequest";
-export * from "./model/domain/quote/quoteInterfaceResponse";
+export * from "./model/domain/quote/quoteInterface/priceConfig";
+export * from "./model/domain/quote/quoteInterface/quoteInterfaceRequest";
+export * from "./model/domain/quote/quoteInterface/quoteInterfaceResponse";
 
 export * from "./model/domain/quote/pricingRateLevel";
-export * from "./model/domain/quote/priceRule";
-export * from "./model/domain/quote/priceRuleSet";
-export * from "./model/domain/quote/priceRuleLocationConditional";
-export * from "./model/domain/quote/priceRuleConfig";
+export * from "./model/domain/quote/priceRule/priceRule";
+export * from "./model/domain/quote/priceRule/priceRuleSet";
+export * from "./model/domain/quote/priceRule/priceRuleLocationConditional";
+export * from "./model/domain/quote/priceRule/priceRuleConfig";
 export * from "./model/domain/quote/ratingCard/ratingCard";
 export * from "./model/domain/quote/ratingCard/ratingCardTonneVolumeRates";
 export * from "./model/domain/quote/quote";

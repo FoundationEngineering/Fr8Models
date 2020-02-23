@@ -1,5 +1,5 @@
 import { GetRecordsResponse } from './getRecordsResponse'
-import { PriceRuleConfig } from '../domain/quote/priceRuleConfig'
+import { PriceRuleConfig } from '../domain/quote/priceRule/priceRuleConfig'
 
 export class GetPriceRuleConfigsResponse extends GetRecordsResponse {
     constructor(public page?: number,

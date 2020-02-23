@@ -1,6 +1,6 @@
-import { RatingCard } from './ratingCard/ratingCard';
-import { PricingRateLevel } from './pricingRateLevel';
-import { RatingCardTonneVolumeRates } from './ratingCard/ratingCardTonneVolumeRates';
+import { RatingCard } from '../ratingCard/ratingCard';
+import { PricingRateLevel } from '../pricingRateLevel';
+import { RatingCardTonneVolumeRates } from '../ratingCard/ratingCardTonneVolumeRates';
 
 export class PriceConfig {
     constructor(public ratingCard: RatingCard,
