@@ -17,6 +17,7 @@ export * from "./model/domain/quote/priceRule/priceRuleConfig";
 export * from "./model/domain/quote/ratingCard/ratingCard";
 export * from "./model/domain/quote/ratingCard/ratingCardTonneVolumeRates";
 export * from "./model/domain/quote/ratingCard/ratingCardMinCharge";
+export * from "./model/domain/quote/ratingCard/ratingCardPalletRate";
 export * from "./model/domain/quote/quote";
 export * from "./model/domain/quote/additionalCosts";
 
