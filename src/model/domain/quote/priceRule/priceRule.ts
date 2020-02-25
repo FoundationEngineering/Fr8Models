@@ -30,7 +30,8 @@ export class PriceRule {
     public static DATA_SET_SRC: any = {
         RATING_CARD: 'src_rating_card', // Store reference to id of rating card
         RATE_RATING_CARD: 'src_rate_rating_card', // Store reference to id of rating card 
-        FLAT_AMOUNT: 'src_flat_amount' // Store float Value
+        MIN_CHARGE_RATING_CARD: 'src_min_charge_rating_card', // Store reference to id of rating card 
+        FLAT_AMOUNT: 'src_flat_amount' // Store float value
         // Other sources defined later
     }
 

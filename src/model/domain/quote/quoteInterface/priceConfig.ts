@@ -1,6 +1,6 @@
 import { RatingCard } from '../ratingCard/ratingCard';
-import { PricingRateLevel } from '../pricingRateLevel';
 import { RatingCardTonneVolumeRates } from '../ratingCard/ratingCardTonneVolumeRates';
+import { RatingCardMinCharge } from '../ratingCard/ratingCardMinCharge';
 
 export class PriceConfig {
     constructor(public ratingCard: RatingCard,
@@ -8,6 +8,7 @@ export class PriceConfig {
                 public palletRate?: number, public gstRate?: number,
                 public flatCost?: number, public fafRate?: number,
                 public minCharge?: number,
-                public ratingCardTonneVolumeRatesList?: RatingCardTonneVolumeRates[]
+                public ratingCardTonneVolumeRatesList?: RatingCardTonneVolumeRates[],
+                public ratingCardMinChargeList?: RatingCardMinCharge[]
                ) { }
 }
