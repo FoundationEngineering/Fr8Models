@@ -3,6 +3,7 @@ export * from "./model/domain/user";
 export * from "./model/domain/company";
 export * from "./model/domain/dispatchDefinition";
 export * from "./model/domain/dispatchRecord";
+export * from "./model/domain/placeLocation";
 //// Quote
 export * from "./model/domain/quote/pricingLevel";
 export * from "./model/domain/quote/quoteInterface/priceConfig";

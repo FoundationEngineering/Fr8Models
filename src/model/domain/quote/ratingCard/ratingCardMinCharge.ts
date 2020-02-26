@@ -12,7 +12,8 @@ export class RatingCardMinChargeData {
 }
 
 export class RatingCardMinCharge {
-    constructor(public id?: number,
+    constructor(
+        public id?: number,
         public parentCompanyId?: number,
         public companyId?: number,
         public companyName?: string,
