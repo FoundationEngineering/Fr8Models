@@ -1,8 +1,14 @@
-export class ZoneData {
+export class ZoneRate {
+    constructor(
+        public m3: number,
+        public tonne: number,
+        public cost: number) {}
+}
 
+export class ZoneData {
     constructor(
         public toLocation: string,
-        public rates: any[]) {}
+        public rates: ZoneRate[]) {}
 }
 
 export class RatingCardZoneData {
