@@ -5,9 +5,18 @@ export class ZoneRate {
         public cost: number) {}
 }
 
+export class MajorMinorRel {
+    constructor(
+        public location: string,
+        public minorLocationList: string[]) {}
+}
+
 export class ZoneData {
     constructor(
         public toLocation: string,
+        public majorLocationList: MajorMinorRel[],
+        public cost_p_m3: number,
+        public cost_p_tonne: number,
         public rates: ZoneRate[]) {}
 }
 
