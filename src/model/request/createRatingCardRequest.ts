@@ -3,6 +3,11 @@ import { PricingLevelPair, MajorLocationSet, MinorLocationSet } from '../domain/
 import { PricingRateLevelPair } from '../domain/quote/pricingRateLevel';
 
 export class CreateRatingCardRequest {
-    constructor(public companyId: number, public majorLocations: MajorLocationSet,
-                public minorLocations: MinorLocationSet, public pricingRateLevelList: PricingRateLevelPair[]) {}
+    constructor(
+        public companyId: number,
+        public majorLocations: MajorLocationSet,
+        public minorLocations: MinorLocationSet,
+        public pricingRateLevelList: PricingRateLevelPair[],
+        public cardData?: any
+    ) { }
 }
