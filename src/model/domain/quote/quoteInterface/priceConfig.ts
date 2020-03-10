@@ -2,6 +2,7 @@ import { RatingCard } from '../ratingCard/ratingCard';
 import { RatingCardTonneVolumeRates } from '../ratingCard/ratingCardTonneVolumeRates';
 import { RatingCardMinCharge } from '../ratingCard/ratingCardMinCharge';
 import { RatingCardPalletRate } from '../ratingCard/ratingCardPalletRate';
+import { RatingCardZone } from '../ratingCard/ratingCardZone';
 
 export class PriceConfig {
     constructor(public ratingCard: RatingCard,
@@ -14,6 +15,7 @@ export class PriceConfig {
                 public minCharge?: number,
                 public ratingCardTonneVolumeRatesList?: RatingCardTonneVolumeRates[],
                 public ratingCardMinChargeList?: RatingCardMinCharge[],
-                public ratingCardPalletRateList?: RatingCardPalletRate[]
+                public ratingCardPalletRateList?: RatingCardPalletRate[],
+                public ratingCardZoneList?: RatingCardZone[]
                ) { }
 }
