@@ -1,7 +1,10 @@
 export class PalletRateData {
     constructor(
         public toLocation: string,
-        public cost: number) {}
+        public at: number, // pallet number
+        public cost: number,
+        public baseCharge: number
+        ) {}
 }
 
 export class RatingCardPalletRateData {
