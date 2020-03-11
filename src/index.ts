@@ -23,6 +23,10 @@ export * from "./model/domain/quote/ratingCard/ratingCardZone";
 export * from "./model/domain/quote/quote";
 export * from "./model/domain/quote/additionalCosts";
 
+//// Time Sheet
+export * from "./model/domain/timeSheet/timeRecord";
+export * from "./model/domain/timeSheet/totalTimeRecord";
+
 // Exception
 export * from "./model/exception/notFoundException";
 export * from "./model/exception/forbiddenException";
