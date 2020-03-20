@@ -10,6 +10,6 @@ export class PriceRuleLocationConditional {
         public priceRuleSet?: PriceRuleSet,
         public id?: string,
         public name?: string,
-        public from?: string
+        public fromLocationList?: string[]
         ) { }
 }
