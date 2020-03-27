@@ -1,5 +1,9 @@
 export class DispatchRecord {
 // Use data mapper layer translate the backend
+    public userId: number;
+    public companyId: number;
+    public parentCompanyId: number;
+
     public id: string;
     public flags: string;
     public jobType: string;
@@ -93,6 +97,10 @@ export class DispatchRecord {
         this.deliveryDepot = ''; // TODO= load from db
         this.currentDepot = ''; // TODO: load from db
         this.shipPayer = '';
+
+        this.userId = 0;
+        this.companyId = 0;
+        this.parentCompanyId = 0;
 
         // Load in kwargs here
         (Object as any).assign(this, args);
