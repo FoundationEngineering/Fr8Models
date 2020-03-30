@@ -24,6 +24,7 @@ export * from "./model/domain/quote/quote";
 export * from "./model/domain/quote/additionalCosts";
 
 // Access
+export * from "./model/type/Access";
 export * from "./model/type/AccessType";
 export * from "./model/type/PrivilegeType";
 
