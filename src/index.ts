@@ -23,6 +23,10 @@ export * from "./model/domain/quote/ratingCard/ratingCardZone";
 export * from "./model/domain/quote/quote";
 export * from "./model/domain/quote/additionalCosts";
 
+// Access
+export * from "./model/type/AccessType";
+export * from "./model/type/PrivilegeType";
+
 //// Time Sheet
 export * from "./model/domain/timeSheet/timeRecord";
 export * from "./model/domain/timeSheet/totalTimeRecord";
