@@ -4,12 +4,14 @@ export * from "./model/domain/company";
 export * from "./model/domain/dispatchDefinition";
 export * from "./model/domain/dispatchRecord";
 export * from "./model/domain/placeLocation";
+
 //// Quote
 export * from "./model/domain/quote/pricingLevel";
 export * from "./model/domain/quote/quoteInterface/priceConfig";
 export * from "./model/domain/quote/quoteInterface/quoteInterfaceRequest";
 export * from "./model/domain/quote/quoteInterface/quoteInterfaceResponse";
 
+//// Rating Conf
 export * from "./model/domain/quote/pricingRateLevel";
 export * from "./model/domain/quote/priceRule/priceRule";
 export * from "./model/domain/quote/priceRule/priceRuleSet";
@@ -22,6 +24,8 @@ export * from "./model/domain/quote/ratingCard/ratingCardPalletRate";
 export * from "./model/domain/quote/ratingCard/ratingCardZone";
 export * from "./model/domain/quote/quote";
 export * from "./model/domain/quote/additionalCosts";
+
+export * from "./model/domain/backup/ratingConf";
 
 // Access
 export * from "./model/type/Access";
