@@ -86,3 +86,6 @@ export * from "./model/utils/userInfoFromToken";
 
 // Helper
 export * from "./helper/modelUtils";
+
+// Mappers
+export * from "./mapper/dispatchRecord.mapper";

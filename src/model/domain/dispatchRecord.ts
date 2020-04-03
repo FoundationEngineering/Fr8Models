@@ -41,7 +41,7 @@ constructor(
     public nonHirePallets?: number,
 
     public lifts?: number,
-    public goodsType?: number,
+    public goodsType?: string,
     // Name
     public goods?: string,
     public commodity?: string,
@@ -84,7 +84,7 @@ constructor(
     public isCharged?: boolean,
     public isOverride?: boolean,
 
-    public invoiceId?: number,
+    public invoice?: number,
 
     public hasPOD?: boolean,
     public comments?: string,
