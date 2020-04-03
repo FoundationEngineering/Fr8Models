@@ -25,7 +25,7 @@ export class DispatchRecordMapper {
 
         dispatch.pickupAddr = this.findElementString(jsonObject, 'Pickup Address');
         dispatch.pickupAddrLocality = this.findElementString(jsonObject, 'From Locality');
-        dispatch.deliverAddr = this.findElementString(jsonObject, 'Deliver Address');
+        dispatch.deliverAddr = this.findElementString(jsonObject, 'Delivery Address');
         dispatch.deliverAddrLocality = this.findElementString(jsonObject, 'To Locality');
 
         dispatch.vehicle = this.findElementString(jsonObject, 'Vehicle');
