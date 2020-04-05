@@ -53,7 +53,6 @@ export * from "./model/request/updateUserRequest";
 export * from "./model/request/saveCompanyRequest";
 export * from "./model/request/updateCompanyRequest";
 export * from "./model/request/resetPasswordRequest";
-
 export * from "./model/request/getRecordsRequest";
 
 // Response
@@ -93,3 +92,6 @@ export * from "./helper/modelUtils";
 
 // Mappers
 export * from "./mapper/dispatchRecord.mapper";
+
+// Backup
+export * from "./model/domain/backup/ratingConf";
