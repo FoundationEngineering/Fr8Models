@@ -8,6 +8,7 @@ import { RatingCardMinCharge } from '../quote/ratingCard/ratingCardMinCharge';
 export class RatingConf{
     constructor(
         public id?: number, 
+        public uuid?: string,
         public parentCompanyId?: number, 
         public companyId?: number, 
         public createdAt?: Date, 

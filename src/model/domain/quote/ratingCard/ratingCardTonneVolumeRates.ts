@@ -14,6 +14,8 @@ export class RatingCardTonneVolumeRates {
         public companyName?: string,
         public createdAt?: Date,
         public updatedAt?: Date,
-        public data?: RatingCardTonneVolumeRatesData) { }
+        public data?: RatingCardTonneVolumeRatesData,
+        public uuid?: string
+        ) { }
 
 }

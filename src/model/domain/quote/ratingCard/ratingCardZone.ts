@@ -35,5 +35,7 @@ export class RatingCardZone {
         public name?: string,
         public createdAt?: Date,
         public updatedAt?: Date,
-        public data?: RatingCardZoneData) { }
+        public data?: RatingCardZoneData,
+        public uuid?: string
+        ) { }
 }

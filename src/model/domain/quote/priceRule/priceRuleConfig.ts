@@ -8,7 +8,8 @@ export class PriceRuleConfig {
         public companyId?: number,
         public priceRuleSet?: PriceRuleSet,
         public priceRuleLocationConditionals?: PriceRuleLocationConditional[],
-        public filters?: PriceRuleFilter[] // points to the Conditional in the contained list
+        public filters?: PriceRuleFilter[], // points to the Conditional in the contained list
+        public uuid?: string
         ){} 
 }
 
