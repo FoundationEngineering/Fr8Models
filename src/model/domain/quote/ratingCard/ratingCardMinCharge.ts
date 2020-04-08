@@ -20,5 +20,7 @@ export class RatingCardMinCharge {
         public name?: string,
         public createdAt?: Date,
         public updatedAt?: Date,
-        public data?: RatingCardMinChargeData) { }
+        public data?: RatingCardMinChargeData,
+        public uuid?: string,
+        ) { }
 }

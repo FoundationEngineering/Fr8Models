@@ -21,5 +21,7 @@ export class RatingCardPalletRate {
         public name?: string,
         public createdAt?: Date,
         public updatedAt?: Date,
-        public data?: RatingCardPalletRateData) { }
+        public data?: RatingCardPalletRateData,
+        public uuid?: string
+        ) { }
 }
