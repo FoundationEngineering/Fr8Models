@@ -1,3 +1,6 @@
+import { DispatchDoc } from "./dispatchDoc";
+import { DispatchHistory } from "./dispatchHistory";
+
 export class DispatchRecord {
 // Use data mapper layer translate the backend
 constructor(
@@ -6,6 +9,7 @@ constructor(
     public companyId?: number,
     public parentCompanyId?: number,
     public manifestId?: number,
+    public quoteId?: number,
     public createdDate?: Date,
     public updatedDate?: Date,
 
@@ -98,11 +102,12 @@ constructor(
     public nextLocation?: string,
 
     // Added SQL 1 to Many Fields
-    public dispatchDocs?: any[],
-    public dispatchHistories?: any[],
+    public dispatchDocs?: DispatchDoc[],
+    public dispatchHistories?: DispatchHistory[],
     public dispatchItemLines?: any[],
     public dispatchMoves?: any[],
     public dispatchNotes?: any[],
+    public dispatchComments?: any[],
     public dispatchProofs?: any[]
 ) {}
 

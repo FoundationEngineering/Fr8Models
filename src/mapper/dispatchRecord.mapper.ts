@@ -1,4 +1,4 @@
-import { DispatchRecord } from '../model/domain/dispatchRecord';
+import { DispatchRecord } from '../model/domain/dispatch/dispatchRecord';
 
 export class DispatchRecordMapper {
     public static mapFromICOSDispatchData(jsonObject: any): any {
