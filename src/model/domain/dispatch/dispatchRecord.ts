@@ -108,7 +108,11 @@ constructor(
     public dispatchMoves?: any[],
     public dispatchNotes?: any[],
     public dispatchComments?: any[],
-    public dispatchProofs?: any[]
+    public dispatchCostList?: any[],
+    public dispatchProofs?: any[],
+
+    public manifest?: any,
+    public quote?: any,
 ) {}
 
     init(args: any) {

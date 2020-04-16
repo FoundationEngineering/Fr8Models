@@ -17,6 +17,23 @@ export class DispatchRecordMapper {
         // Additional costs from quote can be ref when query group join
         return dispatch;
     }
+    public static mapFromRecordToDto(dispatch: DispatchRecord) {
+        const dto = JSON.parse(JSON.stringify(dispatch));
+        delete dto.manifest;
+        delete dto.quote;
+        delete dto.dispatchComments;
+        delete dto.dispatchCostList;
+        delete dto.dispatchDocs;
+        delete dto.dispatchHistories;
+        delete dto.dispatchItemLines;
+        delete dto.dispatchMoves;
+        delete dto.dispatchNotes;
+        delete dto.dispatchProofs;
+        
+        dto.companyId = parseInt(dto.companyId as any, 10) || null;
+        dto.parentCompanyId = parseInt(dto.parentCompanyId as any, 10) || null;
+        return dto;
+    }
     public static mapFromICOSDispatchData(jsonObject: any): any {
 
         const dispatch: DispatchRecord = new DispatchRecord();
