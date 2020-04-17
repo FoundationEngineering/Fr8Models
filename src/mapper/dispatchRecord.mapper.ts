@@ -112,6 +112,8 @@ export class DispatchRecordMapper {
         dispatch.quantity = this.findElementNumber(jsonObject, 'Quantity');
         dispatch.bookedDateTime = this.findElementDate(jsonObject, 'Booked Date');
 
+        delete dispatch.id;
+
         return dispatch;
     }
 
