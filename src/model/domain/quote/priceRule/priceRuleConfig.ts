@@ -6,6 +6,7 @@ export class PriceRuleConfig {
         public id?: number,
         public companyName?: string,
         public companyId?: number,
+        public parentCompanyId?: number,
         public priceRuleSet?: PriceRuleSet,
         public priceRuleLocationConditionals?: PriceRuleLocationConditional[],
         public filters?: PriceRuleFilter[], // points to the Conditional in the contained list
