@@ -1,6 +1,6 @@
 // Can either store a reference to the data src in db or store the flat cost
 export class PriceRuleDataSet {
-    constructor(public type: string, public cost?: number, public idReferences?: number[]) {}
+    constructor(public type: string, public cost?: number, public idReferences?: number[], public uuidReference?: string) {}
 }
 export class PriceRule {
     // Type of Pricing Rules
@@ -9,7 +9,7 @@ export class PriceRule {
         TONNE_RATE: 'type_tonne_rate',
         MASS_RATE: 'type_mass_rate',
         PALLET_RATE: 'type_pallet_rate',
-        // Additional Costs
+        // Additional Costr
         DRIVER_COST: 'type_driver_cost',
         UPLIFT_COST: 'type_uplift_cost',
         FUEL_ADJUST_FEE: 'type_fuel_adjust_fee',

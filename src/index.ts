@@ -1,9 +1,19 @@
 // Domain
 export * from "./model/domain/user";
 export * from "./model/domain/company";
-export * from "./model/domain/dispatchDefinition";
-export * from "./model/domain/dispatchRecord";
+export * from "./model/domain/dispatch/dispatchDefinition";
+export * from "./model/domain/dispatch/dispatchRecord";
+export * from "./model/domain/dispatch/dispatchDoc";
+export * from "./model/domain/dispatch/dispatchHistory";
+export * from "./model/domain/dispatch/dispatchItemLine";
+export * from "./model/domain/dispatch/dispatchMoves";
+export * from "./model/domain/dispatch/dispatchCost";
+export * from "./model/domain/dispatch/dispatchNote";
+export * from "./model/domain/dispatch/dispatchProofOfDelivery";
+export * from "./model/domain/dispatch/manifest";
 export * from "./model/domain/placeLocation";
+
+export * from "./model/domain/templateDto";
 
 //// Quote
 export * from "./model/domain/quote/pricingLevel";

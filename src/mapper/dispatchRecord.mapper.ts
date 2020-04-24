@@ -1,6 +1,39 @@
-import { DispatchRecord } from '../model/domain/dispatchRecord';
+import { DispatchRecord } from '../model/domain/dispatch/dispatchRecord';
+import { Quote } from '../model/domain/quote/quote';
 
 export class DispatchRecordMapper {
+    public static mapFromQuote(quote: Quote) {
+        const dispatch = new DispatchRecord();
+        dispatch.companyId = parseInt(quote.companyId as any, 10) || undefined;
+        dispatch.parentCompanyId = parseInt(quote.parentCompanyId as any, 10) || undefined;
+        dispatch.nonHirePallets = parseInt(quote.palletNo as any, 10) || undefined; // default non hire
+        dispatch.weight = parseInt(quote.weight as any, 10) || undefined;
+        dispatch.cubic = parseInt(quote.mass as any, 10) || undefined; // mass miss named here, should be cubic
+        dispatch.quoteId = parseInt(quote.id as any, 10) || undefined;
+
+        dispatch.from = quote.from;
+        dispatch.to = quote.to;
+
+        // Additional costs from quote can be ref when query group join
+        return dispatch;
+    }
+    public static mapFromRecordToDto(dispatch: DispatchRecord) {
+        const dto = JSON.parse(JSON.stringify(dispatch));
+        delete dto.manifest;
+        delete dto.quote;
+        delete dto.dispatchComments;
+        delete dto.dispatchCostList;
+        delete dto.dispatchDocs;
+        delete dto.dispatchHistories;
+        delete dto.dispatchItemLines;
+        delete dto.dispatchMoves;
+        delete dto.dispatchNotes;
+        delete dto.dispatchProofs;
+        
+        dto.companyId = parseInt(dto.companyId as any, 10) || null;
+        dto.parentCompanyId = parseInt(dto.parentCompanyId as any, 10) || null;
+        return dto;
+    }
     public static mapFromICOSDispatchData(jsonObject: any): any {
 
         const dispatch: DispatchRecord = new DispatchRecord();
@@ -78,6 +111,8 @@ export class DispatchRecordMapper {
 
         dispatch.quantity = this.findElementNumber(jsonObject, 'Quantity');
         dispatch.bookedDateTime = this.findElementDate(jsonObject, 'Booked Date');
+
+        delete dispatch.id;
 
         return dispatch;
     }

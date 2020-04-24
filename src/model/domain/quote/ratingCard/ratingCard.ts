@@ -9,7 +9,7 @@ export class CardData {
         public majorLocationsRefList?: string,
         public minorLocationsRefList?: string,
         public pricingRateLevelListRefList?: string,
-        public zoneRatingCardId?: number,
+        public zoneRatingCardId?: string,
         public uuid?: string,
         ){ }
 }
