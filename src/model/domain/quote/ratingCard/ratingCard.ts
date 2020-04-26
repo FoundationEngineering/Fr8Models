@@ -16,9 +16,9 @@ export class CardData {
 
 export class RatingCard {
     constructor(public id?: number,
-                public majorLocations?: MajorLocationSet,
-                public minorLocations?: MinorLocationSet,
-                public pricingRateLevelList?: Array<PricingRateLevelPair>,
+                public majorLocations?: any[],
+                public minorLocations?: any[],
+                public pricingRateLevelList?: any[],
                 public cardData?: CardData){ }
 
 }
