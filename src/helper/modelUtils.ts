@@ -48,4 +48,16 @@ export class ModelUtils {
 
         return text.toLocaleLowerCase();
     }
+
+    public static entries (obj: any) {
+        const resArray = [];
+        if (obj) {
+            const ownProps = Object.keys(obj);
+            let i = ownProps.length;
+            while (i--) {
+                resArray[i] = [ownProps[i], obj[ownProps[i]]];
+            }
+        }
+        return resArray;
+    }
 }
