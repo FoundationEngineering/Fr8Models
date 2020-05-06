@@ -1,12 +1,12 @@
 import { Company } from './company';
 
 export abstract class UserTemplate {
-    constructor(public id?: number, public username?: string, public password?: string, public companyId?: number, public parentCompanyId?: number, public updatedAt?: string, public createdAt?: string){ }
+    constructor(public id?: number, public username?: string, public password?: string, public companyId?: number, public parentCompanyId?: number, public updatedAt?: Date, public createdAt?: Date){ }
 }
 
 export class User extends UserTemplate {
     constructor(public id?: number, public username?: string, public password?: string,
-        public companyId?: number, public parentCompanyId?: number, public updatedAt?: string, public createdAt?: string){
+        public companyId?: number, public parentCompanyId?: number, public updatedAt?: Date, public createdAt?: Date){
         super(id, username, password, companyId, parentCompanyId, updatedAt, createdAt);
     }
 }
@@ -18,7 +18,7 @@ export class User extends UserTemplate {
 
 export class UserExtended extends UserTemplate {
     constructor(public id?: number, public username?: string, public password?: string,
-        public companyId?: number, public parentCompanyId?: number, public updatedAt?: string, public createdAt?: string,
+        public companyId?: number, public parentCompanyId?: number, public updatedAt?: Date, public createdAt?: Date,
         
         public company?: Company){
         super(id, username, password, companyId, parentCompanyId, updatedAt, createdAt);

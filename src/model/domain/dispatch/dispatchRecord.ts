@@ -23,7 +23,6 @@ constructor(
     
     public flags?: string,
     public jobType?: string,
-    public comodity?: string,
 
     public bookedBy?: string,
 
@@ -31,6 +30,8 @@ constructor(
     
     public customer?: string,
 
+    public consignorId?: number,
+    public consignorName?: string,
     public consigneeId?: number,
     public consigneeName?: string,
     public pickupAddr?: string,

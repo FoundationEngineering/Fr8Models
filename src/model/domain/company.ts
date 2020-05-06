@@ -1,4 +1,5 @@
 import { User } from './user';
+import { PlaceLocation } from './placeLocation';
 
 export abstract class companyTemplate {
     constructor (public id?: number, public parentId?: number, public childrenIds?: Array<number>,
@@ -26,7 +27,9 @@ export class CompanyExtended extends companyTemplate {
         public companyName?: string, public companyMainEmail?: string, public companyNotifyEmail?: string,
         public companyQuoteEmail?: string, public createdAt?: Date, public updatedAt?: Date,
         
-        public users?: User[]) { // Extended fields
+        public users?: User[],
+        public addressList?: PlaceLocation[],
+        ) { // Extended fields
         super(id, parentId, childrenIds, companyName, companyMainEmail, companyNotifyEmail,
             companyQuoteEmail, createdAt, updatedAt);
     }

@@ -60,4 +60,15 @@ export class ModelUtils {
         }
         return resArray;
     }
+
+    public static isEmpty(obj: any) {
+        if (obj != null) {
+            for (var key in obj) {
+                if (obj.hasOwnProperty(key))
+                    return false;
+            }
+        }
+        return true;
+    }
+
 }

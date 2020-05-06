@@ -1,11 +1,10 @@
-export class PlaceLocation {
+export class PlaceLocationAddress {
     constructor(
         public id?: number,
         public parentCompanyId?: number,
         public companyId?: number,
         public companyName?: string,
 
-        public name?: string,
         public region?: string,
         public regionGroup?: string,
 
@@ -17,6 +16,5 @@ export class PlaceLocation {
         public town?: string,
 
         public createdAt?: Date,
-        public updatedAt?: Date,
-        public data?: any) { }
+        public updatedAt?: Date) { }
 }
