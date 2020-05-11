@@ -58,9 +58,11 @@ constructor(
 
     public bookedDateTime?: Date,
     public reqPickupDateTime?: Date,
+    public reqPickupTime?: any,
     public actPickupDateTime?: Date,
 
     public reqDeliveryDateTime?: Date,
+    public reqDeliveryTime?: any,
     public actDeliveryDateTime?: Date,
 
     public pUPTZ?: string,

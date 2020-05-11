@@ -2,6 +2,7 @@ import { TemplateDto } from "../templateDto";
 
 export class DispatchItemLine extends TemplateDto {
     constructor(
+        public uuid?: string,
         public dispatchId?: number,
         public comodityId?: number,
         public comodityName?: string,
@@ -12,6 +13,8 @@ export class DispatchItemLine extends TemplateDto {
         public description?: string,
         public weight?: number,
         public cubic?: number,
+        public createdAt?: Date,
+        public updatedAt?: Date,
         ) {
         super();
     }

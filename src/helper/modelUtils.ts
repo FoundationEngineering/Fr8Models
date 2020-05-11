@@ -70,5 +70,15 @@ export class ModelUtils {
         }
         return true;
     }
+    
+    public static isArrayEmpty(arr: any) {
+        if (arr == null) {
+            return true;
+        } else if (arr.length == null) {
+            return true;
+        } else if (arr.length <= 0) {
+            return true;
+        }
+    }
 
 }
