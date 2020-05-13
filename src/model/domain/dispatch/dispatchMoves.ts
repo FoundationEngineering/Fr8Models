@@ -8,6 +8,10 @@ export class DispatchMove extends TemplateDto {
         public placeLocationRegion?: string,
         public placeLocationRegionGroup?: string,
 
+        public moveSetNo?: number,
+        public deliveryPersonName?: string,
+        public recieverPersonName?: string,
+
         public pickupBy?: string,
         public pickupFrom?: string,
         public acceptedBy?: string,

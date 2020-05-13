@@ -11,6 +11,7 @@ export * from "./model/domain/dispatch/dispatchCost";
 export * from "./model/domain/dispatch/dispatchNote";
 export * from "./model/domain/dispatch/dispatchProofOfDelivery";
 export * from "./model/domain/dispatch/manifest";
+export * from "./model/domain/dispatch/dispatchStatus";
 export * from "./model/domain/placeLocation";
 export * from "./model/domain/placeLocationAddress";
 
@@ -105,6 +106,7 @@ export * from "./helper/modelUtils";
 // Mappers
 export * from "./mapper/dispatchRecord.mapper";
 export * from "./mapper/ratingCard.mapper";
+export * from "./mapper/dispatchMove.mapper";
 
 // Backup
 export * from "./model/domain/backup/ratingConf";
