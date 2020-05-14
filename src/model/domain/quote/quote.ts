@@ -16,6 +16,7 @@ export class Quote {
         public parentCompanyNote?: string, 
         public parentCompanyId?: number,
         public additionalCosts?: AdditionalCost[],
-        public palletNo?: number
+        public palletNo?: number,
+        public dispatchId?: number
         ) { }
 }
