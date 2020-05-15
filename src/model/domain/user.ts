@@ -1,7 +1,16 @@
 import { Company } from './company';
 
 export abstract class UserTemplate {
-    constructor(public id?: number, public username?: string, public password?: string, public companyId?: number, public parentCompanyId?: number, public updatedAt?: Date, public createdAt?: Date){ }
+    constructor(public id?: number,
+        public username?: string,
+        public password?: string,
+        public companyId?: number,
+        public parentCompanyId?: number,
+        public updatedAt?: Date,
+        public createdAt?: Date,
+        public firstName?: string,
+        public LastName?: string
+    ){ }
 }
 
 export class User extends UserTemplate {
