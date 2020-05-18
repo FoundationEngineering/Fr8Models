@@ -5,7 +5,7 @@ import { PlaceLocationAddress } from './placeLocationAddress';
 export abstract class companyTemplate {
     constructor (public id?: number, public parentId?: number, public childrenIds?: Array<number>,
         public companyName?: string, public companyMainEmail?: string, public companyNotifyEmail?: string,
-        public companyQuoteEmail?: string, public createdAt?: Date, public updatedAt?: Date) {}
+        public companyQuoteEmail?: string, public createdAt?: Date, public updatedAt?: Date, public uuid?: string) {}
 }
 
 export class Company extends companyTemplate {

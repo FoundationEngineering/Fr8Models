@@ -4,6 +4,9 @@ export class PlaceLocationAddress {
         public parentCompanyId?: number,
         public companyId?: number,
         public companyName?: string,
+        public dispatchId?: number,
+
+        public isDeliveryAddress?: boolean,
 
         public region?: string,
         public regionGroup?: string,

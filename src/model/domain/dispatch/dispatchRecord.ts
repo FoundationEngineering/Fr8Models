@@ -1,5 +1,6 @@
 import { DispatchDoc } from "./dispatchDoc";
 import { DispatchHistory } from "./dispatchHistory";
+import { PlaceLocationAddress } from "../placeLocationAddress";
 
 export class DispatchRecord {
 // Use data mapper layer translate the backend
@@ -113,6 +114,9 @@ constructor(
     public dispatchComments?: any[],
     public dispatchCostList?: any[],
     public dispatchProofs?: any[],
+
+    public deliverPlacelocationAddress?: PlaceLocationAddress,
+    public pickupPlacelocationAddress?: PlaceLocationAddress,
 
     public manifest?: any,
     public quote?: any,
