@@ -4,6 +4,10 @@ export class DispatchStatus {
             short: 'NEW',
             long: 'new'
         },
+        REQ: {
+            short: 'REQ',
+            long: 'requested'
+        },
         READY: {
             short: 'RDY',
             long: 'ready'

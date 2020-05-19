@@ -105,6 +105,8 @@ constructor(
     public currentLocation?: string,
     public nextLocation?: string,
 
+    public isFinalisedByCustomer?: boolean,
+
     // Added SQL 1 to Many Fields
     public dispatchDocs?: DispatchDoc[],
     public dispatchHistories?: DispatchHistory[],

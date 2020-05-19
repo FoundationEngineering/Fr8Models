@@ -107,6 +107,7 @@ export * from "./helper/modelUtils";
 export * from "./mapper/dispatchRecord.mapper";
 export * from "./mapper/ratingCard.mapper";
 export * from "./mapper/dispatchMove.mapper";
+export * from "./mapper/placeLocationAddress.mapper";
 
 // Backup
 export * from "./model/domain/backup/ratingConf";
