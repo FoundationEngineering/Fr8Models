@@ -1,5 +1,6 @@
 // Domain
 export * from "./model/domain/user";
+export * from "./model/domain/userRole";
 export * from "./model/domain/company";
 export * from "./model/domain/dispatch/dispatchDefinition";
 export * from "./model/domain/dispatch/dispatchRecord";

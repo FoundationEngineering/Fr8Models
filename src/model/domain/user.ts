@@ -9,7 +9,8 @@ export abstract class UserTemplate {
         public updatedAt?: Date,
         public createdAt?: Date,
         public firstName?: string,
-        public LastName?: string
+        public LastName?: string,
+        public userRoleType?: string
     ){ }
 }
 

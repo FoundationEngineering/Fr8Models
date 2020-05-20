@@ -9,6 +9,10 @@ export enum AccessType {
     CanAccessRatingCard = 7,
     CanAccessPriceConfig = 8,
     CanAccessQuote = 9,
+    CanAccessDispatchMove = 10,
+    CanAccessDispatchHistory = 11,
+    CanAccessDispatchDocument = 12,
+    CanAccessDispatchConsignmentItem = 13
 }
 
 export class AccessTypeString {
@@ -23,5 +27,9 @@ export class AccessTypeString {
         7: 'CanAccessRatingCard',
         8: 'CanAccessPriceConfig',
         9: 'CanAccessQuote',
+        10: 'CanAccessDispatchMove',
+        11: 'CanAccessDispatchHistory',
+        12: 'CanAccessDispatchDocument',
+        13: 'CanAccessDispatchConsignmentItem'
     }
 }
