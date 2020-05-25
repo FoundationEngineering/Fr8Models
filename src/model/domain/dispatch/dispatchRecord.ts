@@ -91,6 +91,7 @@ constructor(
     
     public isCharged?: boolean,
     public isOverride?: boolean,
+    public isAllocatedByParentCompany?: boolean,
 
     public invoice?: number,
 
@@ -122,6 +123,7 @@ constructor(
 
     public manifest?: any,
     public quote?: any,
+    public uuid?: string
 ) {}
 
     init(args: any) {
