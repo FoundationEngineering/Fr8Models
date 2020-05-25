@@ -52,8 +52,9 @@ export class DispatchRecordMapper {
         dispatch.customer = this.findElementString(jsonObject, 'Customer');
 
         dispatch.pickupFrom = this.findElementString(jsonObject, 'Pickup');
-        dispatch.from = this.findElementString(jsonObject, 'From');
+        dispatch.from = this.findElementString(jsonObject, 'From'); // Suburb
         dispatch.consigneeName = this.findElementString(jsonObject, 'Deliver');
+        dispatch.consignorName = this.findElementString(jsonObject, 'Pickup');
         dispatch.to = this.findElementString(jsonObject, 'To');
 
         dispatch.pickupAddr = this.findElementString(jsonObject, 'Pickup Address');
