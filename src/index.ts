@@ -44,6 +44,7 @@ export * from "./model/domain/backup/ratingConf";
 export * from "./model/type/Access";
 export * from "./model/type/AccessType";
 export * from "./model/type/PrivilegeType";
+export * from "./controller/userAccess.controller";
 
 //// Time Sheet
 export * from "./model/domain/timeSheet/timeRecord";
