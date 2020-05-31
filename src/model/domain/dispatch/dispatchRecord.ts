@@ -129,6 +129,7 @@ constructor(
     init(args: any) {
         // Load in kwargs here
         (Object as any).assign(this, args);
+        return this;
     }
 
 }

@@ -13,6 +13,7 @@ export * from "./model/domain/dispatch/dispatchNote";
 export * from "./model/domain/dispatch/dispatchProofOfDelivery";
 export * from "./model/domain/dispatch/manifest";
 export * from "./model/domain/dispatch/dispatchStatus";
+export * from "./model/domain/dispatch/dispatchComment";
 export * from "./model/domain/placeLocation";
 export * from "./model/domain/placeLocationAddress";
 
