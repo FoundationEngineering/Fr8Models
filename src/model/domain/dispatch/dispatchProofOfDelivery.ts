@@ -10,6 +10,8 @@ export class DispatchProofOfDelivery extends TemplateDto {
         public consigneeName?: string,
         public consigneeCompanyId?: string,
         public signatureVector?: string,
+        public signatureVectorData?: Blob,
+        public signatureVectorDataArray?: Uint8Array,
         public signatureName?: string,
         public signatureInitials?: string,
         public podImageUrl?: string,
