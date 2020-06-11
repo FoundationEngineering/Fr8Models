@@ -6,6 +6,7 @@ export class PlaceLocationAddress {
         public companyName?: string,
         public dispatchId?: number,
         public depotId?: number,
+        public routeId?: number,
 
         public isDeliveryAddress?: boolean,
 

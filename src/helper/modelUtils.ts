@@ -49,6 +49,11 @@ export class ModelUtils {
         return text.toLocaleLowerCase();
     }
 
+    public static getRandomNumber(length?: number) {
+        const tempLength = length ? length : 1000000000000000000; 
+        return Math.floor(Math.random() * tempLength);
+    }
+
     public static entries (obj: any) {
         const resArray = [];
         if (obj) {
