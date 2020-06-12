@@ -4,6 +4,7 @@ import { DispatchMove } from "./dispatchMoves";
 import { DispatchVehicle } from "./dispatchVehicle";
 import { DispatchRoute } from "./dispatchRoute";
 import { User } from "../user";
+import { PlaceLocationAddress } from "../placeLocationAddress";
 
 export class Manifest extends TemplateDto {
     constructor(
@@ -22,6 +23,9 @@ export class Manifest extends TemplateDto {
         public dispatchVehicle?: DispatchVehicle,
         public dispatchRoute?: DispatchRoute,
         public driverUser?: User,
+
+        public fromPlaceLocationAddress?: PlaceLocationAddress,
+        public toPlaceLocationAddress?: PlaceLocationAddress,
 
     ) {
         super();
