@@ -25,13 +25,18 @@ export class PlaceLocationAddress {
 
     static getAddressString(address: PlaceLocationAddress): string {
         const temp = JSON.parse(JSON.stringify(address));
-        let addr = (temp.streetAddress != null ? temp.streetAddress + ' ' : '') +
-        (temp.suburb != null ? temp.suburb + ' ' : '') +
-        (temp.city != null ? temp.city + ' ' : '') +
-        (temp.postCode != null ? temp.postCode + ' ' : '');
+        let addr = (temp.streetAddress != null ? temp.streetAddress + ', ' : '') +
+        (temp.suburb != null ? temp.suburb + ', ' : '') +
+        (temp.city != null ? temp.city + ', ' : '') +
+        (temp.postCode != null ? temp.postCode : '');
+
         if (addr[addr.length - 1] === ' ') {
             addr = addr.slice(0, addr.length - 1);
         }
+        if (addr[addr.length - 1] === ',') {
+            addr = addr.slice(0, addr.length - 1);
+        }
+
         return addr;
     }
 }
