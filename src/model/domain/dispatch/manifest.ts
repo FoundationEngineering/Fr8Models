@@ -16,6 +16,7 @@ export class Manifest extends TemplateDto {
         public currentPlaceLocation?: string,
         public note?: string,
         public data?: string,
+        public isFinalised?: boolean,
 
         // DB Incl
         public dispatchRecordList?: DispatchRecord[],

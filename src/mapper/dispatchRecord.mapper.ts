@@ -52,10 +52,14 @@ export class DispatchRecordMapper {
         dispatch.customer = this.findElementString(jsonObject, 'Customer');
 
         dispatch.pickupFrom = this.findElementString(jsonObject, 'Pickup');
-        dispatch.from = this.findElementString(jsonObject, 'From'); // Suburb
         dispatch.consigneeName = this.findElementString(jsonObject, 'Deliver');
         dispatch.consignorName = this.findElementString(jsonObject, 'Pickup');
-        dispatch.to = this.findElementString(jsonObject, 'To');
+        dispatch.from = this.findElementString(jsonObject, 'From') ? 
+            this.findElementString(jsonObject, 'From') :
+            this.findElementString(jsonObject, 'Pickup Address'); // Suburb
+        dispatch.to = this.findElementString(jsonObject, 'To') ?
+            this.findElementString(jsonObject, 'To') :
+            this.findElementString(jsonObject, 'Delivery Address'); // Suburb
 
         dispatch.pickupAddr = this.findElementString(jsonObject, 'Pickup Address');
         dispatch.pickupAddrLocality = this.findElementString(jsonObject, 'From Locality');

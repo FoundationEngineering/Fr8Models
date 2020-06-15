@@ -21,7 +21,13 @@ export class PlaceLocationAddress {
         public town?: string,
 
         public createdAt?: Date,
-        public updatedAt?: Date) { }
+        public updatedAt?: Date,
+
+        public toRouteId?: number,
+        public fromRouteId?: number,
+        public toManifestId?: number,
+        public fromManifestId?: number,
+    ) { }
 
     static getAddressString(address: PlaceLocationAddress): string {
         const temp = JSON.parse(JSON.stringify(address));
