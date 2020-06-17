@@ -3,6 +3,21 @@ import { UserRole } from "../model/domain/userRole";
 export class UserAccessController {
     constructor(public roleLong: string) { }
     // Dispatch Options
+    public canUserAccessDispatchQuoteInfo(): boolean {
+         switch (this.roleLong) {
+            case UserRole.ROLE_TYPE.ADMIN.long:
+            case UserRole.ROLE_TYPE.ADMIN_ORIGIN.long:
+            case UserRole.ROLE_TYPE.DISPATCHER_ADMIN.long:
+            case UserRole.ROLE_TYPE.CUSTOMER.long:
+                return true;
+                break;
+            case UserRole.ROLE_TYPE.DISPATCHER.long:
+            case UserRole.ROLE_TYPE.DRIVER.long:
+                return false;
+                break;
+        }
+        return false;
+    }
     public canUserCreateDispatch(): boolean {
         switch (this.roleLong) {
             case UserRole.ROLE_TYPE.ADMIN.long:

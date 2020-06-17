@@ -17,6 +17,8 @@ export class Manifest extends TemplateDto {
         public note?: string,
         public data?: string,
         public isFinalised?: boolean,
+        public isInTransit?: boolean,
+        public isCompleted?: boolean,
 
         // DB Incl
         public dispatchRecordList?: DispatchRecord[],
