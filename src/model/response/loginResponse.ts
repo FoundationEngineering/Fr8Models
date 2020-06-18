@@ -8,6 +8,7 @@ export class LoginResponse {
         public lastName?: string,
         public token?: string,
         public company?: Company,
-        public userRole?: UserRole
-    ){}
+        public userRole?: UserRole,
+        public userId?: number
+    ) {}
 }
