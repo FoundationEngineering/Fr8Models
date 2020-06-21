@@ -32,6 +32,14 @@ export class DispatchStatus {
             short: 'OFD',
             long: 'offloaded and delivered'
         },
+        DELIVERED: {
+            short: 'DEL',
+            long: 'delivered'
+        },
+        PROOF_OF_DELIVERY: {
+            short: 'POD',
+            long: 'proof of delivery'
+        },
         ACCEPTED: {
             short: 'ACC',
             long: 'accepted'
@@ -41,4 +49,15 @@ export class DispatchStatus {
             long: 'rejected'
         },
     };
+    
+    public static getDropdownOptions(): any[] {
+        return Object.keys(DispatchStatus.STATUS)
+            .map((item) => {
+                const val = (DispatchStatus.STATUS as any)[item];
+                return {
+                    label: val.long + ' | ' + val.short,
+                    value: val.short
+                };
+            });
+    }
 }
