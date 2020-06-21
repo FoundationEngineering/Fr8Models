@@ -1,5 +1,6 @@
 import { DispatchRecord } from '../model/domain/dispatch/dispatchRecord';
 import { Quote } from '../model/domain/quote/quote';
+import { Company } from '../model/domain/company';
 
 export class DispatchRecordMapper {
     public static mapFromQuote(quote: Quote) {
@@ -120,6 +121,13 @@ export class DispatchRecordMapper {
         delete dispatch.id;
 
         return dispatch;
+    }
+
+    public static mapDispatchCompanyId(companyList: any[], dispatchRecordList: any[]) {
+        return dispatchRecordList.map((item) => {
+            item.companyId = (companyList.find((fItem) => fItem.companyName === item.customer) || { id: undefined }).id;
+            return item;
+        });
     }
 
     private static findElementString(jsonObject: any, key: any) {
