@@ -1,6 +1,7 @@
 import { DispatchRecord } from '../model/domain/dispatch/dispatchRecord';
 import { Quote } from '../model/domain/quote/quote';
 import { Company } from '../model/domain/company';
+import { PlaceLocationAddress } from '../model/domain/placeLocationAddress';
 
 export class DispatchRecordMapper {
     public static mapFromQuote(quote: Quote) {
@@ -62,11 +63,11 @@ export class DispatchRecordMapper {
             this.findElementString(jsonObject, 'To') :
             this.findElementString(jsonObject, 'Delivery Address'); // Suburb
 
-        dispatch.pickupAddr = this.findElementString(jsonObject, 'Pickup Address');
+        dispatch.pickupAddr = DispatchRecordMapper.getPickupAddressStringFromICOSDispatch(jsonObject);
         dispatch.pickupAddrLocality = this.findElementString(jsonObject, 'From Locality');
-        dispatch.deliverAddr = this.findElementString(jsonObject, 'Delivery Address');
+        dispatch.deliverAddr = DispatchRecordMapper.getDeliveryAddressStringFromICOSDispatch(jsonObject);
         dispatch.deliverAddrLocality = this.findElementString(jsonObject, 'To Locality');
-
+        
         dispatch.vehicle = this.findElementString(jsonObject, 'Vehicle');
         dispatch.lastVehicle = this.findElementString(jsonObject, 'Last Vehicle');
 
@@ -128,6 +129,49 @@ export class DispatchRecordMapper {
             item.companyId = (companyList.find((fItem) => fItem.companyName === item.customer) || { id: undefined }).id;
             return item;
         });
+    }
+
+    public static getDeliveryAddressStringFromICOSDispatch(icosDispatchRecord: any) {
+        const address = new PlaceLocationAddress();
+
+        address.streetAddress = this.findElementString(icosDispatchRecord, 'Pickup Address');
+        address.suburb = this.findElementString(icosDispatchRecord, 'From');
+        address.city = this.findElementString(icosDispatchRecord, 'From Locality');
+
+        return PlaceLocationAddress.getAddressString(address);
+    }
+    public static getPickupAddressStringFromICOSDispatch(icosDispatchRecord: DispatchRecord) {
+        const address = new PlaceLocationAddress();
+
+        address.streetAddress = this.findElementString(icosDispatchRecord, 'Delivery Address');
+        address.suburb = this.findElementString(icosDispatchRecord, 'To');
+        address.city = this.findElementString(icosDispatchRecord, 'To Locality');
+
+        return PlaceLocationAddress.getAddressString(address);
+    }
+    
+    public static getDeliveryAddressStringFromDispatch(dispatchRecord: DispatchRecord) {
+        if (dispatchRecord && dispatchRecord.deliverPlacelocationAddress) {
+            return PlaceLocationAddress.getAddressString(dispatchRecord.deliverPlacelocationAddress);
+        } else { 
+            return '';
+        }
+    }
+    public static getPickupAddressStringFromDispatch(dispatchRecord: DispatchRecord) {
+        if (dispatchRecord && dispatchRecord.pickupPlacelocationAddress) {
+            return PlaceLocationAddress.getAddressString(dispatchRecord.pickupPlacelocationAddress);
+        } else { 
+            return '';
+        }
+    }
+    public static mapDispatchAddresses(dispatchRecord: DispatchRecord) {
+        const temp = JSON.parse(JSON.stringify(dispatchRecord));
+        temp.pickupAddr = DispatchRecordMapper.getPickupAddressStringFromDispatch(dispatchRecord);
+        temp.deliverAddr = DispatchRecordMapper.getDeliveryAddressStringFromDispatch(dispatchRecord);
+        return temp;
+    }
+    public static mapDispatchListAddresses(dispatchRecordList: DispatchRecord[]) {
+        return  dispatchRecordList.map(DispatchRecordMapper.mapDispatchAddresses);
     }
 
     private static findElementString(jsonObject: any, key: any) {

@@ -27,6 +27,8 @@ export class PlaceLocationAddress {
         public fromRouteId?: number,
         public toManifestId?: number,
         public fromManifestId?: number,
+        public toDispatchId?: number,
+        public fromDispatchId?: number,
     ) { }
 
     static getAddressString(address: PlaceLocationAddress): string {
