@@ -10,6 +10,8 @@ export class QuoteInterfaceRequest {
         public palletAmount: number = 0,
         public driverCost: number = 0,
         public upliftCost: number = 0,
+
+        public quoteId?: string
     ) {
         this.totalCalculatedCost = 0;
         this.totalCost = 0;

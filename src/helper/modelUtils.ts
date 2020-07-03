@@ -1,11 +1,11 @@
 export class ModelUtils {
-    constructor(){ }
+    constructor() { }
 
     // Merges the object fields if the object matchest the src object fields
     public static merge(src: any, obj: any): any {
         if (src && obj) {
             for (var key in src) {
-                if (key && src.hasOwnProperty(key) && obj[key]) src[key] = obj[key] ;
+                if (key && src.hasOwnProperty(key) && obj[key]) src[key] = obj[key];
             }
         }
         return src;
@@ -19,11 +19,11 @@ export class ModelUtils {
         });
         return list;
     }
-    
+
     public static keysToLowerCase(obj: any): any {
         var key, keys = Object.keys(obj);
         var n = keys.length;
-        var newobj={}
+        var newobj = {}
         while (n--) {
             key = keys[n];
             (newobj as any)[key.toLowerCase()] = obj[key];
@@ -50,11 +50,11 @@ export class ModelUtils {
     }
 
     public static getRandomNumber(length?: number) {
-        const tempLength = length ? length : 1000000000000000000; 
+        const tempLength = length ? length : 1000000000000000000;
         return Math.floor(Math.random() * tempLength);
     }
 
-    public static entries (obj: any) {
+    public static entries(obj: any) {
         const resArray = [];
         if (obj) {
             const ownProps = Object.keys(obj);
@@ -75,7 +75,7 @@ export class ModelUtils {
         }
         return true;
     }
-    
+
     public static isArrayEmpty(arr: any) {
         if (arr == null) {
             return true;
@@ -93,6 +93,26 @@ export class ModelUtils {
             return false;
         }
         return true;
+    }
+
+    public static getCopy(obj: any) {
+        return JSON.parse(JSON.stringify(obj));
+    }
+
+    public static jsonSafeStringify(obj: any, indent = 2) {
+        let cache: any[] = [];
+        const retVal = JSON.stringify(
+            obj,
+            (key, value) =>
+                typeof value === "object" && value !== null
+                    ? (cache as any).includes(value)
+                        ? undefined // Duplicate reference found, discard key
+                        : cache.push(value) && value // Store value in our collection
+                    : value,
+            indent
+        );
+        (cache as any) = null;
+        return retVal;
     }
 
 }
