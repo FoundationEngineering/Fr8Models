@@ -18,5 +18,7 @@ export class PlaceLocation {
 
         public createdAt?: Date,
         public updatedAt?: Date,
-        public data?: any) { }
+        public data?: any,
+        
+        public regionId?: any) { }
 }

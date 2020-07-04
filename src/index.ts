@@ -18,6 +18,8 @@ export * from "./model/domain/dispatch/dispatchVehicle";
 export * from "./model/domain/dispatch/dispatchDepot";
 export * from "./model/domain/dispatch/dispatchRoute";
 export * from "./model/domain/placeLocation";
+export * from "./model/domain/placeLocationRegion";
+export * from "./model/domain/placeLocationRegionGroup";
 export * from "./model/domain/placeLocationAddress";
 
 export * from "./model/domain/templateDto";
