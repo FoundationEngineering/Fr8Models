@@ -115,4 +115,17 @@ export class ModelUtils {
         return retVal;
     }
 
+    public static modifyMap(map: any, cb: Function) {
+        const mapCopy = ModelUtils.getCopy(map);
+        return Object.keys(mapCopy).map((key) => {
+            let value = mapCopy[key];
+
+            // Custom CB
+            value = cb(value, key);
+
+            return {
+                [key]: value
+            };
+        }).reduce((prev, curr) => Object.assign((prev || {}), curr));
+    }
 }
