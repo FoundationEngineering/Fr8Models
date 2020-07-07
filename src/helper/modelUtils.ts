@@ -115,7 +115,7 @@ export class ModelUtils {
         return retVal;
     }
 
-    public static modifyMap(map: any, cb: Function) {
+    public static modifyMap(map: any, cb: Function): any {
         const mapCopy = ModelUtils.getCopy(map);
         return Object.keys(mapCopy).map((key) => {
             let value = mapCopy[key];
@@ -127,5 +127,9 @@ export class ModelUtils {
                 [key]: value
             };
         }).reduce((prev, curr) => Object.assign((prev || {}), curr));
+    }
+
+    public static listToMap(list: any): any[] {
+        return list.reduce((prev: any, curr: any) => Object.assign((prev || {}), curr));
     }
 }
