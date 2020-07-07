@@ -1,3 +1,5 @@
+import { PlaceLocationRegionGroup } from "../../placeLocationRegionGroup";
+
 export class QuoteInterfaceRequest {
     public tonne: number;
     public totalCalculatedCost: number;
@@ -11,7 +13,8 @@ export class QuoteInterfaceRequest {
         public driverCost: number = 0,
         public upliftCost: number = 0,
 
-        public quoteId?: string
+        public quoteId?: string,
+        public regionGroupList?: PlaceLocationRegionGroup[]
     ) {
         this.totalCalculatedCost = 0;
         this.totalCost = 0;
