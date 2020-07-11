@@ -132,4 +132,7 @@ export class ModelUtils {
     public static listToMap(list: any): any[] {
         return list.reduce((prev: any, curr: any) => Object.assign((prev || {}), curr));
     }
+    public static mapToList(map: any): any {
+        return Object.keys(map).map((item) => map[item]);
+    }
 }
