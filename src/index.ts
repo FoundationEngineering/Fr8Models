@@ -116,6 +116,7 @@ export * from "./mapper/dispatchRecord.mapper";
 export * from "./mapper/ratingCard.mapper";
 export * from "./mapper/dispatchMove.mapper";
 export * from "./mapper/placeLocationAddress.mapper";
+export * from "./mapper/dispatchQuote.mapper";
 
 // Backup
 export * from "./model/domain/backup/ratingConf";
