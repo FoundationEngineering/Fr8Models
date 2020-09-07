@@ -7,7 +7,11 @@ export class TimeRecord {
         public createdAt?: Date,
         public updatedAt?: Date,
 
+        public fullName?: String,
+        public hours?: number,
+
         public timeIn?: Date,
         public timeOut?: Date,
-        public totalSeconds?: number) { }
+        public totalSeconds?: number,
+    ) { }
 }

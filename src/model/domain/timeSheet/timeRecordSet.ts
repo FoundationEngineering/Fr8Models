@@ -12,5 +12,8 @@ export class TimeRecordSet {
 
         public timeRecordList?: TimeRecord[],
         public totalTimeRecordList?: TotalTimeRecord[],
+
+        public dateTimeString?: string,
+        public isSubmitted?: boolean
         ) { }
 }
