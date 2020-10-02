@@ -1,3 +1,5 @@
+import { Leave } from "./leave";
+
 export class TimeRecord {
     constructor(
         public id?: number,
@@ -13,5 +15,9 @@ export class TimeRecord {
         public timeIn?: Date,
         public timeOut?: Date,
         public totalSeconds?: number,
+        
+        public leaveList?: Leave[],
+        public timeInOutJsonList?: {timeIn: Date, timeOut: Date}[],
+        public hoursJsonList?: {day: String, hours: number}[],
     ) { }
 }

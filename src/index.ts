@@ -52,10 +52,15 @@ export * from "./model/type/AccessType";
 export * from "./model/type/PrivilegeType";
 export * from "./controller/userAccess.controller";
 
+//Time
+export * from "./model/domain/time/timeInOutWeekMap";
+export * from "./model/domain/time/hoursWeekMap";
+
 //// Time Sheet
 export * from "./model/domain/timeSheet/timeRecord";
 export * from "./model/domain/timeSheet/totalTimeRecord";
 export * from "./model/domain/timeSheet/timeRecordSet";
+export * from "./model/domain/timeSheet/leave";
 export * from "./model/domain/pay/payPeriod";
 
 // Exception
