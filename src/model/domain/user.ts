@@ -10,7 +10,8 @@ export abstract class UserTemplate {
         public createdAt?: Date,
         public firstName?: string,
         public LastName?: string,
-        public userRoleType?: string
+        public userRoleType?: string,
+        public isSignedIn?: boolean
     ){ }
 }
 

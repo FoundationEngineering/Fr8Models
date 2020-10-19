@@ -4,6 +4,11 @@ import { Access } from "../type/Access";
 
 export class UserRole extends TemplateDto {
     public static ROLE_TYPE = {    
+        TIME_RECORD_USER: {
+            short: 'tm_rec_usr',
+            long: 'TIME_RECORD_USER',
+            label: 'Time Record User',
+        },
         DRIVER: {
             short: 'drv',
             long: 'DRIVER',
