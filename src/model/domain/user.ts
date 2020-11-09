@@ -9,9 +9,10 @@ export abstract class UserTemplate {
         public updatedAt?: Date,
         public createdAt?: Date,
         public firstName?: string,
-        public LastName?: string,
+        public lastName?: string,
         public userRoleType?: string,
-        public isSignedIn?: boolean
+        public isSignedIn?: boolean,
+        public isCheckedIn?: boolean
     ){ }
 }
 

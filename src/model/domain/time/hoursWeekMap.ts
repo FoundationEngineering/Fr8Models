@@ -1,3 +1,5 @@
+import { TimeInOutWeekMap } from "./timeInOutWeekMap";
+
 export class HoursWeekMap {
     constructor(
         public mo? :number,
@@ -7,5 +9,7 @@ export class HoursWeekMap {
         public fr? :number,
         public sa? :number,
         public su? :number,
+
+        public timeInOutJsonMap? :TimeInOutWeekMap,
     ) { }
 }
