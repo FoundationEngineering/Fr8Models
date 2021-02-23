@@ -23,6 +23,7 @@ export * from "./model/domain/placeLocationRegionGroup";
 export * from "./model/domain/placeLocationAddress";
 
 export * from "./model/domain/templateDto";
+export * from "./model/genKeyVal";
 
 //// Quote
 export * from "./model/domain/quote/pricingLevel";
@@ -126,3 +127,7 @@ export * from "./mapper/dispatchQuote.mapper";
 
 // Backup
 export * from "./model/domain/backup/ratingConf";
+
+// Accounting
+export * from "./model/domain/accounting/clientQueryRecord";
+export * from "./model/domain/accounting/queryDoc";
