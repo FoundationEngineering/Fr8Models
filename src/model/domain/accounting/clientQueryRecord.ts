@@ -17,6 +17,7 @@ export class ClientQueryRecord extends TemplateDto {
     public responseDocumentIds?: number[],
     public queryDocs?: QueryDoc[],
     public status?: string,
+    public isRequested?: boolean,
     public isResolved?: boolean,
     public isOpened?: boolean,
     public isNonCompliant?: boolean,
