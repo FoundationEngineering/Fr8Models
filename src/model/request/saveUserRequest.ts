@@ -4,5 +4,7 @@ export class SaveUserRequest {
         public password?: string,
         public companyId?: number,
         public firstName?: string,
-        public lastName?: string){ }
+        public lastName?: string,
+        public checkInCode?: string,
+    ){ }
 }
