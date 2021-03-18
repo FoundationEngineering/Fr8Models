@@ -131,3 +131,8 @@ export * from "./model/domain/backup/ratingConf";
 // Accounting
 export * from "./model/domain/accounting/clientQueryRecord";
 export * from "./model/domain/accounting/queryDoc";
+
+// Inventory
+export * from "./model/domain/inventory/inventoryItem";
+export * from "./model/domain/inventory/inventoryItemRecord";
+
