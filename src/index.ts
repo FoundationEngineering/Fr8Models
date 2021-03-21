@@ -136,3 +136,6 @@ export * from "./model/domain/accounting/queryDoc";
 export * from "./model/domain/inventory/inventoryItem";
 export * from "./model/domain/inventory/inventoryItemRecord";
 
+// Invoice
+export * from "./model/domain/invoice/invoiceItem";
+export * from "./model/domain/invoice/invoiceRecord";
