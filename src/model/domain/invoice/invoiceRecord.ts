@@ -25,6 +25,6 @@ export class InvoiceRecord extends TemplateDto {
         public isRepeat?: any,
         public repeatType?: any,
 
-        public invoiceItemRecords?: any[],
+        public invoiceItems?: any[],
     ) { super(); }
 }
