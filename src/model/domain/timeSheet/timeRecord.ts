@@ -1,6 +1,8 @@
 import { Leave } from "./leave";
 import { TimeInOutWeekMap } from "../time/timeInOutWeekMap";
 import { HoursWeekMap } from "../time/hoursWeekMap";
+import { SignInRecord } from "./signInRecord";
+import { SignOutRecord } from "./signOutRecord";
 
 export class TimeRecord {
     constructor(
@@ -19,6 +21,8 @@ export class TimeRecord {
         public totalSeconds?: number,
         
         public leaveList?: Leave[],
+        public signInRecordList?: SignInRecord[],
+        public signOutRecordList?: SignOutRecord[],
 
         public timeInOutJsonMap?: TimeInOutWeekMap,
         public hoursJsonMap?: HoursWeekMap

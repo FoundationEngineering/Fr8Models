@@ -62,6 +62,8 @@ export * from "./model/domain/timeSheet/timeRecord";
 export * from "./model/domain/timeSheet/totalTimeRecord";
 export * from "./model/domain/timeSheet/timeRecordSet";
 export * from "./model/domain/timeSheet/leave";
+export * from "./model/domain/timeSheet/signOutRecord";
+export * from "./model/domain/timeSheet/signInRecord";
 export * from "./model/domain/pay/payPeriod";
 
 // Exception
