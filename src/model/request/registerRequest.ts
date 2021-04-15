@@ -7,5 +7,7 @@ export class RegisterRequest {
         public companyName?: string,
         public companyMainEmail?: string,
         public companyQuoteEmail?: string,
-        public companyNotifyEmail?: string){ }
+        public companyNotifyEmail?: string,
+        public checkInCode?: string,
+    ){ }
 }
